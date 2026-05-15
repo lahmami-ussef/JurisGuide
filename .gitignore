@@ -1,0 +1,25 @@
+# Node.js
+frontend/node_modules/
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Python
+backend/venv/
+venv/
+env/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+pip-log.txt
+pip-delete-this-directory.txt
+.pytest_cache/
+
+# OS Files
+.DS_Store
+Thumbs.db
+
+# Env
+.env
