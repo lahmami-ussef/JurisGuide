@@ -7,21 +7,22 @@ export default {
   theme: {
     extend: {
       colors: {
-        gold: {
-          DEFAULT: '#c9a84c',
-          dark: '#b09341',
-          light: '#dcc484',
+        green: {
+          light: '#e6f4ea',
+          DEFAULT: '#2e7d32',
+          dark: '#1b5e20',
+          accent: '#4caf50'
         },
         dark: {
-          base: '#0a0a0f',
-          card: '#14141c',
-          lighter: '#1a1a25',
+          base: '#ffffff',
+          card: '#f9fafb',
+          lighter: '#f3f4f6',
         },
-        cream: '#f5f0e8',
+        cream: '#ffffff',
       },
       fontFamily: {
-        serif: ['"Playfair Display"', 'serif'],
-        sans: ['Inter', 'sans-serif'],
+        serif: ['"Plus Jakarta Sans"', 'sans-serif'],
+        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
       },
     },
   },

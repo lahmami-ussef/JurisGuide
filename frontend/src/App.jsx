@@ -32,11 +32,11 @@ const App = () => {
   };
 
   return (
-    <div className="min-h-screen bg-[#050505] text-white p-4 font-sans flex flex-col items-center">
-      <header className="w-full max-w-4xl py-6 flex items-center justify-between border-b border-[#c9a84c]/20 mb-8">
-        <h1 className="text-3xl font-serif text-[#c9a84c] tracking-wider">JURISGUIDE</h1>
+    <div className="min-h-screen bg-white text-gray-900 p-4 font-sans flex flex-col items-center">
+      <header className="w-full max-w-4xl py-6 flex items-center justify-between border-b border-green-DEFAULT/20 mb-8">
+        <h1 className="text-3xl font-serif text-green-DEFAULT tracking-wider font-bold">MAROCAIN JURISGUIDE</h1>
         {session && (
-          <button onClick={resetApp} className="text-sm opacity-60 hover:text-[#c9a84c] transition-colors">
+          <button onClick={resetApp} className="text-sm opacity-60 hover:text-green-DEFAULT transition-colors font-medium">
             Nouvelle consultation
           </button>
         )}
@@ -46,7 +46,7 @@ const App = () => {
         {!session && !result && (
           isLoadingSession ? (
             <div className="flex justify-center items-center h-64">
-              <div className="animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-[#c9a84c]"></div>
+              <div className="animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-green-DEFAULT"></div>
             </div>
           ) : (
             <DomainSelector onSelect={handleDomainSelect} />

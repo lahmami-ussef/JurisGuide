@@ -100,12 +100,12 @@ Veuillez agréer, Madame, Monsieur, l'expression de mes salutations distinguées
   };
 
   return (
-    <div className="fixed inset-0 z-[100] flex items-center justify-center p-4 bg-black/80 backdrop-blur-sm animate-in fade-in duration-300">
-      <div className="bg-[#14141c] border border-[#c9a84c]/30 rounded-3xl w-full max-w-3xl max-h-[90vh] flex flex-col shadow-2xl overflow-hidden animate-in zoom-in-95 duration-300">
+    <div className="fixed inset-0 z-[100] flex items-center justify-center p-4 bg-gray-900/50 backdrop-blur-sm animate-in fade-in duration-300">
+      <div className="bg-white border border-gray-200 rounded-3xl w-full max-w-3xl max-h-[90vh] flex flex-col shadow-2xl overflow-hidden animate-in zoom-in-95 duration-300">
         {/* Header */}
-        <div className="p-6 border-b border-[#c9a84c]/10 flex justify-between items-center bg-[#1a1a25]">
-          <h3 className="text-xl font-serif text-[#c9a84c]">Votre Lettre Type</h3>
-          <button onClick={onClose} className="p-2 hover:bg-white/5 rounded-full transition-colors">
+        <div className="p-6 border-b border-gray-200 flex justify-between items-center bg-gray-50">
+          <h3 className="text-xl font-serif text-green-dark font-bold">Votre Lettre Type</h3>
+          <button onClick={onClose} className="p-2 hover:bg-gray-200 rounded-full transition-colors text-gray-500">
             <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
             </svg>
@@ -113,23 +113,23 @@ Veuillez agréer, Madame, Monsieur, l'expression de mes salutations distinguées
         </div>
 
         {/* Content */}
-        <div className="flex-1 overflow-y-auto p-8">
-          <pre className="font-sans text-sm leading-relaxed whitespace-pre-wrap bg-[#0a0a0f] p-8 rounded-xl border border-[#c9a84c]/5 opacity-90">
+        <div className="flex-1 overflow-y-auto p-8 bg-white">
+          <pre className="font-sans text-sm leading-relaxed whitespace-pre-wrap bg-gray-50 p-8 rounded-xl border border-gray-200 text-gray-800">
             {content}
           </pre>
         </div>
 
         {/* Footer Actions */}
-        <div className="p-6 bg-[#1a1a25] border-t border-[#c9a84c]/10 flex flex-col sm:flex-row gap-4">
+        <div className="p-6 bg-gray-50 border-t border-gray-200 flex flex-col sm:flex-row gap-4">
           <button 
             onClick={copyToClipboard}
-            className="flex-1 py-3 px-6 bg-transparent border border-[#c9a84c] text-[#c9a84c] font-bold rounded-xl hover:bg-[#c9a84c] hover:text-black transition-all flex items-center justify-center gap-2"
+            className="flex-1 py-3 px-6 bg-white border border-green-DEFAULT text-green-DEFAULT font-bold rounded-xl hover:bg-green-DEFAULT hover:text-white transition-all flex items-center justify-center gap-2 shadow-sm"
           >
             {copied ? 'Copié !' : 'Copier dans le presse-papier'}
           </button>
           <button 
             onClick={downloadTxt}
-            className="flex-1 py-3 px-6 bg-[#c9a84c] text-black font-bold rounded-xl hover:bg-[#b09341] transition-all flex items-center justify-center gap-2 shadow-lg shadow-[#c9a84c]/10"
+            className="flex-1 py-3 px-6 bg-green-DEFAULT text-white font-bold rounded-xl hover:bg-green-dark transition-all flex items-center justify-center gap-2 shadow-md shadow-green-DEFAULT/20"
           >
             <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />

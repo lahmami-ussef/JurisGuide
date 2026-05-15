@@ -9,7 +9,7 @@ class SessionManager:
         """Initialise une nouvelle session."""
         self.sessions[session_id] = {
             "domain": domain,
-            "facts": {},
+            "facts": {}, # les reponses 
             "step": 0,
             "history": []
         }
@@ -20,6 +20,7 @@ class SessionManager:
 
     def update_session(self, session_id: str, **kwargs):
         """Met à jour les champs d'une session."""
+        # **kwargs signfie n'importe quels champs 
         if session_id in self.sessions:
             self.sessions[session_id].update(kwargs)
 

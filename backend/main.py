@@ -23,7 +23,7 @@ from knowledge_base import KNOWLEDGE_BASE
 
 # Instanciation de l'application. FastAPI génère automatiquement
 # une documentation interactive accessible sur http://localhost:8000/docs
-app = FastAPI(title="JurisGuide API", version="1.0.0")
+app = FastAPI(title="Marocain JurisGuide API", version="1.0.0")
 
 
 # 2. MIDDLEWARES (CORS)
@@ -104,7 +104,7 @@ async def start_session(request: StartRequest):
     Elle initialise une session et renvoie la toute première question.
     """
     # 1. Création d'un ID unique pour reconnaitre l'utilisateur
-    session_id = str(uuid.uuid4()) 
+    session_id = str(uuid.uuid4()) #universally unique identifier 
     
     # 2. Sauvegarde de la session en mémoire
     session_manager.create_session(session_id, request.domain) 
