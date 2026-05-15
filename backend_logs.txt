@@ -1,0 +1,9 @@
+time="2026-04-23T23:29:08+01:00" level=warning msg="C:\\Projects\\JurisGuide\\docker-compose.yml: the attribute `version` is obsolete, it will be ignored, please remove it to avoid potential confusion"
+backend-1  | INFO:     Will watch for changes in these directories: ['/app']
+backend-1  | INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+backend-1  | INFO:     Started reloader process [1] using StatReload
+backend-1  | INFO:     Started server process [8]
+backend-1  | INFO:     Waiting for application startup.
+backend-1  | INFO:     Application startup complete.
+backend-1  | INFO:     172.21.0.1:54560 - "GET / HTTP/1.1" 404 Not Found
+backend-1  | INFO:     172.21.0.1:54560 - "GET /favicon.ico HTTP/1.1" 404 Not Found

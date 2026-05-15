@@ -1,0 +1,10 @@
+time="2026-04-23T23:40:13+01:00" level=warning msg="C:\\Projects\\JurisGuide\\docker-compose.yml: the attribute `version` is obsolete, it will be ignored, please remove it to avoid potential confusion"
+frontend-1  | 
+frontend-1  | > jurisguide-frontend@1.0.0 dev
+frontend-1  | > vite --host
+frontend-1  | 
+frontend-1  | 
+frontend-1  |   VITE v5.4.21  ready in 9068 ms
+frontend-1  | 
+frontend-1  |   ➜  Local:   http://localhost:5173/
+frontend-1  |   ➜  Network: http://172.21.0.3:5173/
